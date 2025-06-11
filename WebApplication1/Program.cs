@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddApplicationInsightsTelemetry("09ec1894-7ec8-45f5-8a9e-b41df3da16f5");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
